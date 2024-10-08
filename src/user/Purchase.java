@@ -48,6 +48,7 @@ public class Purchase extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 204, 255));
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 

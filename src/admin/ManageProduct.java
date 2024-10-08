@@ -1,19 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package admin;
+
+import java.awt.Color;
 
 /**
  *
  * @author hvsom
  */
-public class Product extends javax.swing.JFrame {
+    
+    
+public class ManageProduct extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Product
-     */
-    public Product() {
+    Color primaryColor = new Color(64, 194, 150);
+    Color textPrimaryColor = new Color(255, 255, 255);
+    public ManageProduct() {
         initComponents();
     }
 
@@ -48,6 +48,7 @@ public class Product extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
@@ -95,7 +96,7 @@ public class Product extends javax.swing.JFrame {
         jLabel4.setText("Category");
 
         jButton1.setBackground(new java.awt.Color(153, 153, 255));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Save");
 
@@ -105,7 +106,7 @@ public class Product extends javax.swing.JFrame {
         jButton2.setText("Delete");
 
         jButton3.setBackground(new java.awt.Color(153, 153, 255));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Update");
 
@@ -224,8 +225,13 @@ public class Product extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
+
+      setVisible(false);
+      AdminDashboard.jPanel22.setBackground(primaryColor);
+      AdminDashboard.jPanel23.setBackground(primaryColor);
+      AdminDashboard.jLabel23.setBackground(textPrimaryColor);
+      AdminDashboard.jLabel24.setVisible(false);
+      AdminDashboard.jLabel34.setVisible(true);
     }//GEN-LAST:event_jLabel14MouseClicked
 
     /**
@@ -245,20 +251,23 @@ public class Product extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Product.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Product.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Product.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Product.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageProduct.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Product().setVisible(true);
+                new ManageProduct().setVisible(true);
             }
         });
     }

@@ -1,19 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package admin;
+
+import static admin.AdminDashboard.jLabel22;
+import static admin.AdminDashboard.jLabel33;
+import static admin.AdminDashboard.jPanel10;
+import static admin.AdminDashboard.jPanel9;
+import java.awt.Color;
 
 /**
  *
  * @author hvsom
  */
-public class Category extends javax.swing.JFrame {
+public class ManageCategory extends javax.swing.JFrame {
 
     /**
      * Creates new form Category
      */
-    public Category() {
+    
+    Color primaryColor = new Color(64, 194, 150);
+    Color textPrimaryColor = new Color(255, 255, 255);
+    
+    
+    public ManageCategory() {
         initComponents();
     }
 
@@ -44,6 +52,7 @@ public class Category extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
@@ -206,8 +215,12 @@ public class Category extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
+      setVisible(false);
+      AdminDashboard.jPanel9.setBackground(primaryColor);
+      AdminDashboard.jPanel10.setBackground(primaryColor);
+      AdminDashboard.jLabel8.setBackground(textPrimaryColor);
+      AdminDashboard.jLabel22.setVisible(false);
+      AdminDashboard.jLabel33.setVisible(true);
     }//GEN-LAST:event_jLabel14MouseClicked
 
     /**
@@ -227,20 +240,21 @@ public class Category extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Category.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageCategory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Category.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageCategory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Category.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageCategory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Category.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ManageCategory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Category().setVisible(true);
+                new ManageCategory().setVisible(true);
             }
         });
     }

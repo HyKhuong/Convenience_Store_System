@@ -4,15 +4,22 @@
  */
 package admin;
 
+import static admin.AdminDashboard.jLabel27;
+import static admin.AdminDashboard.jLabel29;
+import static admin.AdminDashboard.jLabel36;
+import static admin.AdminDashboard.jPanel26;
+import static admin.AdminDashboard.jPanel27;
+import java.awt.Color;
+
 /**
  *
  * @author hvsom
  */
 public class AddSupplier extends javax.swing.JFrame {
 
-    /**
-     * Creates new form AddSupplier
-     */
+   Color primaryColor = new Color(64, 194, 150);
+    Color textPrimaryColor = new Color(255, 255, 255);
+
     public AddSupplier() {
         initComponents();
     }
@@ -47,6 +54,7 @@ public class AddSupplier extends javax.swing.JFrame {
         btnSave = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
@@ -217,8 +225,13 @@ public class AddSupplier extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField8ActionPerformed
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
+        
+      setVisible(false);
+      AdminDashboard.jPanel26.setBackground(primaryColor);
+      AdminDashboard.jPanel27.setBackground(primaryColor);
+      AdminDashboard.jLabel27.setBackground(textPrimaryColor);
+      AdminDashboard.jLabel29.setVisible(false);
+      AdminDashboard.jLabel36.setVisible(true);
     }//GEN-LAST:event_jLabel14MouseClicked
 
     /**

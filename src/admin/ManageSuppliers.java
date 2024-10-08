@@ -4,15 +4,21 @@
  */
 package admin;
 
+import static admin.AdminDashboard.jLabel37;
+import static admin.AdminDashboard.jLabel38;
+import static admin.AdminDashboard.jLabel39;
+import static admin.AdminDashboard.jPanel28;
+import static admin.AdminDashboard.jPanel29;
+import java.awt.Color;
+
 /**
  *
  * @author hvsom
  */
 public class ManageSuppliers extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ManageSuppliers
-     */
+ Color primaryColor = new Color(64, 194, 150);
+    Color textPrimaryColor = new Color(255, 255, 255);
     public ManageSuppliers() {
         initComponents();
     }
@@ -67,6 +73,7 @@ public class ManageSuppliers extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTable2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setForeground(new java.awt.Color(204, 204, 255));
@@ -201,12 +208,11 @@ public class ManageSuppliers extends javax.swing.JFrame {
                                     .addGap(18, 18, 18)
                                     .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(jLabel6)))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 606, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(59, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -282,8 +288,13 @@ public class ManageSuppliers extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
+  
+        setVisible(false);
+        AdminDashboard.jPanel28.setBackground(primaryColor);
+      AdminDashboard.jPanel29.setBackground(primaryColor);
+      AdminDashboard.jLabel37.setBackground(textPrimaryColor);
+      AdminDashboard.jLabel38.setVisible(false);
+      AdminDashboard.jLabel39.setVisible(true);
     }//GEN-LAST:event_jLabel14MouseClicked
 
     private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed

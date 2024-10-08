@@ -4,15 +4,21 @@
  */
 package admin;
 
+import static admin.AdminDashboard.jLabel25;
+import static admin.AdminDashboard.jLabel26;
+import static admin.AdminDashboard.jLabel35;
+import static admin.AdminDashboard.jPanel24;
+import static admin.AdminDashboard.jPanel25;
+import java.awt.Color;
+
 /**
  *
  * @author hvsom
  */
 public class ManageUser extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ManageUser
-     */
+   Color primaryColor = new Color(64, 194, 150);
+    Color textPrimaryColor = new Color(255, 255, 255);
     public ManageUser() {
         initComponents();
     }
@@ -56,6 +62,7 @@ public class ManageUser extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setForeground(new java.awt.Color(204, 204, 255));
@@ -291,8 +298,12 @@ public class ManageUser extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
+       setVisible(false);
+      AdminDashboard.jPanel24.setBackground(primaryColor);
+      AdminDashboard.jPanel25.setBackground(primaryColor);
+      AdminDashboard.jLabel25.setBackground(textPrimaryColor);
+      AdminDashboard.jLabel26.setVisible(false);
+      AdminDashboard.jLabel35.setVisible(true);
     }//GEN-LAST:event_jLabel14MouseClicked
 
     private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
