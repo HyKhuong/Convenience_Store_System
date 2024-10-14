@@ -47,10 +47,10 @@ public class AdminDashboard extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel22 = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
         jPanel23 = new javax.swing.JPanel();
@@ -163,9 +163,9 @@ public class AdminDashboard extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addGap(41, 41, 41)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,7 +175,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 240, -1));
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 270, -1));
 
         jPanel5.setBackground(new java.awt.Color(42, 73, 58));
 
@@ -213,14 +213,14 @@ public class AdminDashboard extends javax.swing.JFrame {
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addGap(44, 44, 44)
                 .addComponent(jLabel5)
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
             .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel5Layout.createSequentialGroup()
                     .addGap(45, 45, 45)
                     .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(170, Short.MAX_VALUE)))
+                    .addContainerGap(190, Short.MAX_VALUE)))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -238,18 +238,9 @@ public class AdminDashboard extends javax.swing.JFrame {
                     .addContainerGap()))
         );
 
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 240, -1));
+        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 450, 260, -1));
 
         jPanel9.setBackground(new java.awt.Color(42, 73, 58));
-
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(102, 120, 138));
-        jLabel8.setText("Manage Categories");
-        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel8MouseClicked(evt);
-            }
-        });
 
         jPanel10.setBackground(new java.awt.Color(42, 73, 58));
 
@@ -268,22 +259,31 @@ public class AdminDashboard extends javax.swing.JFrame {
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/category_light.png"))); // NOI18N
 
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(102, 120, 138));
+        jLabel8.setText("Manage Categories");
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(29, 29, 29)
+                .addComponent(jLabel8)
+                .addGap(12, 12, 12))
             .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel9Layout.createSequentialGroup()
                     .addGap(45, 45, 45)
                     .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(170, Short.MAX_VALUE)))
+                    .addContainerGap(190, Short.MAX_VALUE)))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -301,7 +301,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                     .addContainerGap()))
         );
 
-        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 240, -1));
+        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 260, -1));
 
         jPanel22.setBackground(new java.awt.Color(42, 73, 58));
 
@@ -337,25 +337,25 @@ public class AdminDashboard extends javax.swing.JFrame {
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel22Layout.createSequentialGroup()
                 .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addGap(37, 37, 37)
                 .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addComponent(jLabel23)
-                .addContainerGap())
+                .addGap(26, 26, 26))
             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel22Layout.createSequentialGroup()
                     .addGap(45, 45, 45)
                     .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(170, Short.MAX_VALUE)))
+                    .addContainerGap(190, Short.MAX_VALUE)))
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel23)
-                    .addComponent(jLabel24))
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel24)
+                    .addComponent(jLabel23))
                 .addContainerGap())
             .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
@@ -364,7 +364,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                     .addContainerGap()))
         );
 
-        jPanel3.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 240, -1));
+        jPanel3.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 260, -1));
 
         jPanel24.setBackground(new java.awt.Color(42, 73, 58));
         jPanel24.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -407,14 +407,14 @@ public class AdminDashboard extends javax.swing.JFrame {
                 .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
                 .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(39, 39, 39)
                 .addComponent(jLabel25)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
             .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel24Layout.createSequentialGroup()
                     .addGap(45, 45, 45)
                     .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(170, Short.MAX_VALUE)))
+                    .addContainerGap(190, Short.MAX_VALUE)))
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -432,7 +432,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                     .addContainerGap()))
         );
 
-        jPanel3.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 240, -1));
+        jPanel3.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 260, -1));
 
         jPanel26.setBackground(new java.awt.Color(42, 73, 58));
 
@@ -470,14 +470,14 @@ public class AdminDashboard extends javax.swing.JFrame {
                 .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
                 .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(41, 41, 41)
                 .addComponent(jLabel27)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
             .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel26Layout.createSequentialGroup()
                     .addGap(45, 45, 45)
                     .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(170, Short.MAX_VALUE)))
+                    .addContainerGap(190, Short.MAX_VALUE)))
         );
         jPanel26Layout.setVerticalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -485,8 +485,8 @@ public class AdminDashboard extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel26Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel27)
-                    .addComponent(jLabel29))
+                    .addComponent(jLabel29)
+                    .addComponent(jLabel27))
                 .addContainerGap())
             .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel26Layout.createSequentialGroup()
@@ -495,7 +495,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                     .addContainerGap()))
         );
 
-        jPanel3.add(jPanel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 240, -1));
+        jPanel3.add(jPanel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 260, -1));
 
         jPanel28.setBackground(new java.awt.Color(42, 73, 58));
 
@@ -531,16 +531,16 @@ public class AdminDashboard extends javax.swing.JFrame {
             jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel28Layout.createSequentialGroup()
                 .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addGap(38, 38, 38)
                 .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(jLabel37)
-                .addContainerGap())
+                .addGap(24, 24, 24))
             .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel28Layout.createSequentialGroup()
                     .addGap(45, 45, 45)
                     .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(170, Short.MAX_VALUE)))
+                    .addContainerGap(190, Short.MAX_VALUE)))
         );
         jPanel28Layout.setVerticalGroup(
             jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -558,7 +558,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                     .addContainerGap()))
         );
 
-        jPanel3.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 240, -1));
+        jPanel3.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 260, -1));
 
         jPanel30.setBackground(new java.awt.Color(42, 73, 58));
 
@@ -596,23 +596,23 @@ public class AdminDashboard extends javax.swing.JFrame {
                 .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addComponent(jLabel40)
-                .addGap(27, 27, 27))
+                .addGap(34, 34, 34))
             .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel30Layout.createSequentialGroup()
                     .addGap(45, 45, 45)
                     .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(170, Short.MAX_VALUE)))
+                    .addContainerGap(190, Short.MAX_VALUE)))
         );
         jPanel30Layout.setVerticalGroup(
             jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel30Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel40)
-                    .addComponent(jLabel41))
+                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel41)
+                    .addComponent(jLabel40))
                 .addContainerGap())
             .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel30Layout.createSequentialGroup()
@@ -621,9 +621,9 @@ public class AdminDashboard extends javax.swing.JFrame {
                     .addContainerGap()))
         );
 
-        jPanel3.add(jPanel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 240, -1));
+        jPanel3.add(jPanel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 260, -1));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 240, 639));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 260, 639));
 
         jPanel13.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -714,7 +714,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                         .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(64, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -745,7 +745,7 @@ public class AdminDashboard extends javax.swing.JFrame {
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 790, 180));
+        jPanel1.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 80, 780, 180));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
