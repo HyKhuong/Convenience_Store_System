@@ -16,6 +16,7 @@ public class SupplierDashboard extends javax.swing.JFrame {
     Color selectionColor = new Color(42,73,58);
     Color siteColor = new Color(153,255,153);
     Color textSelectionColor = new Color(255, 255, 255);
+    int xx, xy;
     
     
     /**
@@ -75,6 +76,16 @@ public class SupplierDashboard extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jPanel2MouseDragged(evt);
+            }
+        });
+        jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jPanel2MousePressed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -477,10 +488,22 @@ public class SupplierDashboard extends javax.swing.JFrame {
             try {
                 Thread.sleep(40);
             } catch (InterruptedException ex) {
-                Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(SupplierDashboard.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }//GEN-LAST:event_formWindowOpened
+
+    private void jPanel2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseDragged
+          int x = evt.getXOnScreen();
+       int y = evt.getYOnScreen();
+       this.setLocation(x - xx,y - xy);
+    }//GEN-LAST:event_jPanel2MouseDragged
+
+    private void jPanel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MousePressed
+         xx = evt.getX();
+        xy = evt.getY();
+
+    }//GEN-LAST:event_jPanel2MousePressed
 
     /**
      * @param args the command line arguments

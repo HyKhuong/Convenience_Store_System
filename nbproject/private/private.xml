@@ -3,25 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Project/Convenience%20Store/src/admin/SelectSupplier.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/supplier/Delivery.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/admin/Transaction.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/admin/ManageSuppliers.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/admin/ManageCategory.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/admin/ManageUser.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/user/SignUp.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/supplier/SupplierAccount.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/admin/AddSupplier.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/supplier/SupplierDashboard.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/user/UserAccount.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/admin/ManageProduct.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/user/ForgotPassword.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/user/login.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/user/Purchase.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/admin/AdminDashboard.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/user/PurchaseDetails.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/user/UserDashboard.java</file>
-            <file>file:/D:/Project/Convenience%20Store/src/supplier/MyDeliveries.java</file>
+            <file>file:/D:/t4/src/user/Purchase.java</file>
+            <file>file:/D:/t4/src/user/SignUp.java</file>
+            <file>file:/D:/t4/src/user/ForgotPassword.java</file>
+            <file>file:/D:/t4/src/supplier/SupplierDashboard.java</file>
+            <file>file:/D:/t4/src/user/UserDashboard.java</file>
+            <file>file:/D:/t4/src/user/UserAccount.java</file>
+            <file>file:/D:/t4/src/user/PurchaseDetails.java</file>
+            <file>file:/D:/t4/src/user/login.java</file>
         </group>
     </open-files>
 </project-private>
