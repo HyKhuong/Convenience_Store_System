@@ -2,6 +2,9 @@
 package admin;
 
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import user.login;
 
 /**
  *
@@ -49,6 +52,11 @@ public class ManageProduct extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
@@ -229,10 +237,24 @@ public class ManageProduct extends javax.swing.JFrame {
       setVisible(false);
       AdminDashboard.jPanel22.setBackground(primaryColor);
       AdminDashboard.jPanel23.setBackground(primaryColor);
-      AdminDashboard.jLabel23.setBackground(textPrimaryColor);
+      AdminDashboard.jLabel23.setForeground(textPrimaryColor);
       AdminDashboard.jLabel24.setVisible(false);
       AdminDashboard.jLabel34.setVisible(true);
     }//GEN-LAST:event_jLabel14MouseClicked
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        for(double i = 0.1; i <=1.0; i+= 0.1){
+            String s = "" + i ;
+            float f =  Float.parseFloat(s);
+            this.setOpacity(f);
+            try {
+                Thread.sleep(40);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments

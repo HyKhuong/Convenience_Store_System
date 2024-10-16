@@ -4,12 +4,19 @@
  */
 package supplier;
 
+import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import user.login;
+
 /**
  *
  * @author huynh
  */
 public class MyDeliveries extends javax.swing.JFrame {
 
+    Color primaryColor = new Color(42,73,58);
+    Color textPrimaryColor = new Color(255, 255, 255);
     /**
      * Creates new form MyDeliveries
      */
@@ -35,6 +42,11 @@ public class MyDeliveries extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
@@ -64,6 +76,11 @@ public class MyDeliveries extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("X");
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -115,6 +132,30 @@ public class MyDeliveries extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+        // TODO add your handling code here:
+        setVisible(false);
+        SupplierDashboard.jPanel14.setBackground(primaryColor);
+        SupplierDashboard.jPanel15.setBackground(primaryColor);
+        SupplierDashboard.jLabel19.setForeground(textPrimaryColor);
+        SupplierDashboard.jLabel20.setVisible(true);
+        SupplierDashboard.jLabel21.setVisible(false);
+    }//GEN-LAST:event_jLabel14MouseClicked
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        for(double i = 0.1; i <=1.0; i+= 0.1){
+            String s = "" + i ;
+            float f =  Float.parseFloat(s);
+            this.setOpacity(f);
+            try {
+                Thread.sleep(40);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments

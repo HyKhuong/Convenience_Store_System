@@ -2,6 +2,8 @@
 package admin;
 
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import user.login;
 
@@ -11,15 +13,13 @@ import user.login;
  */
 public class AdminDashboard extends javax.swing.JFrame {
 
-     Color selectionColor = new Color(42,73,58);
-    Color siteColor = new Color(42,73,58);
+    Color selectionColor = new Color(42,73,58);
+    Color siteColor = new Color(153,255,153);
     Color textSelectionColor = new Color(255, 255, 255);
+    
   
     
     public AdminDashboard() {
-        
-        
-    
         initComponents();
         init();
     }
@@ -93,6 +93,11 @@ public class AdminDashboard extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -274,8 +279,8 @@ public class AdminDashboard extends javax.swing.JFrame {
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(jLabel22)
                 .addGap(29, 29, 29)
                 .addComponent(jLabel8)
                 .addGap(12, 12, 12))
@@ -768,7 +773,7 @@ public class AdminDashboard extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void init(){
-        
+        icons();
     }
     
     
@@ -800,25 +805,23 @@ public class AdminDashboard extends javax.swing.JFrame {
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
       jPanel9.setBackground(selectionColor);
       jPanel10.setBackground(siteColor);
-      jLabel8.setBackground(textSelectionColor);
-      jLabel22.setVisible(true);
-      jLabel33.setVisible(false);
+      jLabel8.setForeground(textSelectionColor);
+      jLabel22.setVisible(false);
+      jLabel33.setVisible(true);
       ManageCategory manageCategory = new ManageCategory();
       manageCategory.setVisible(true);
       manageCategory.pack();
-  
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jLabel23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MouseClicked
       jPanel22.setBackground(selectionColor);
       jPanel23.setBackground(siteColor);
-      jLabel23.setBackground(textSelectionColor);
-      jLabel24.setVisible(true);
-      jLabel34.setVisible(false);
+      jLabel23.setForeground(textSelectionColor);
+      jLabel24.setVisible(false);
+      jLabel34.setVisible(true);
       ManageProduct manageProduct = new ManageProduct();
       manageProduct.setVisible(true);
       manageProduct.pack(); jPanel22.setBackground(selectionColor);
-     
     }//GEN-LAST:event_jLabel23MouseClicked
 
     private void jPanel24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel24MouseClicked
@@ -828,9 +831,9 @@ public class AdminDashboard extends javax.swing.JFrame {
     private void jLabel25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseClicked
       jPanel24.setBackground(selectionColor);
       jPanel25.setBackground(siteColor);
-      jLabel25.setBackground(textSelectionColor);
-      jLabel26.setVisible(true);
-      jLabel35.setVisible(false);
+      jLabel25.setForeground(textSelectionColor);
+      jLabel26.setVisible(false);
+      jLabel35.setVisible(true);
       ManageUser manageUser = new ManageUser();
       manageUser.setVisible(true);
       manageUser.pack(); 
@@ -839,9 +842,9 @@ public class AdminDashboard extends javax.swing.JFrame {
     private void jLabel27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseClicked
       jPanel26.setBackground(selectionColor);
       jPanel27.setBackground(siteColor);
-      jLabel27.setBackground(textSelectionColor);
-      jLabel29.setVisible(true);
-      jLabel36.setVisible(false);
+      jLabel27.setForeground(textSelectionColor);
+      jLabel29.setVisible(false);
+      jLabel36.setVisible(true);
       AddSupplier addSupplier = new AddSupplier();
       addSupplier.setVisible(true);
       addSupplier.pack(); 
@@ -850,9 +853,9 @@ public class AdminDashboard extends javax.swing.JFrame {
     private void jLabel37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel37MouseClicked
       jPanel28.setBackground(selectionColor);
       jPanel29.setBackground(siteColor);
-      jLabel37.setBackground(textSelectionColor);
-      jLabel38.setVisible(true);
-      jLabel39.setVisible(false);
+      jLabel37.setForeground(textSelectionColor);
+      jLabel38.setVisible(false);
+      jLabel39.setVisible(true);
       ManageSuppliers manageSuppliers = new ManageSuppliers();
       manageSuppliers.setVisible(true);
       manageSuppliers.pack(); 
@@ -861,9 +864,9 @@ public class AdminDashboard extends javax.swing.JFrame {
     private void jLabel40MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel40MouseClicked
       jPanel30.setBackground(selectionColor);
       jPanel31.setBackground(siteColor);
-      jLabel40.setBackground(textSelectionColor);
-      jLabel41.setVisible(true);
-      jLabel42.setVisible(false);
+      jLabel40.setForeground(textSelectionColor);
+      jLabel41.setVisible(false);
+      jLabel42.setVisible(true);
       SelectSupplier selectSupplier = new SelectSupplier();
       selectSupplier.setVisible(true);
       selectSupplier.pack(); 
@@ -872,13 +875,27 @@ public class AdminDashboard extends javax.swing.JFrame {
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
       jPanel5.setBackground(selectionColor);
       jPanel6.setBackground(siteColor);
-      jLabel5.setBackground(textSelectionColor);
-      jLabel6.setVisible(true);
-      jLabel32.setVisible(false);
+      jLabel5.setForeground(textSelectionColor);
+      jLabel6.setVisible(false);
+      jLabel32.setVisible(true);
       Transaction transaction = new Transaction();
       transaction.setVisible(true);
       transaction.pack(); 
     }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        for(double i = 0.1; i <=1.0; i+= 0.1){
+            String s = "" + i ;
+            float f =  Float.parseFloat(s);
+            this.setOpacity(f);
+            try {
+                Thread.sleep(40);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
@@ -931,7 +948,7 @@ public class AdminDashboard extends javax.swing.JFrame {
     public static javax.swing.JLabel jLabel22;
     public static javax.swing.JLabel jLabel23;
     public static javax.swing.JLabel jLabel24;
-    protected static javax.swing.JLabel jLabel25;
+    public static javax.swing.JLabel jLabel25;
     public static javax.swing.JLabel jLabel26;
     public static javax.swing.JLabel jLabel27;
     public static javax.swing.JLabel jLabel29;
@@ -947,7 +964,7 @@ public class AdminDashboard extends javax.swing.JFrame {
     public static javax.swing.JLabel jLabel38;
     public static javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    protected static javax.swing.JLabel jLabel40;
+    public static javax.swing.JLabel jLabel40;
     public static javax.swing.JLabel jLabel41;
     public static javax.swing.JLabel jLabel42;
     public static javax.swing.JLabel jLabel5;
